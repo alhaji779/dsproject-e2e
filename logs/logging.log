@@ -1,1 +1,84 @@
 [2025-06-27 14:06:40,514: INFO: main: Welcome to our custm logging Datascience]
+[2025-06-27 19:56:43,768: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2025-06-27 19:56:43,780: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-06-27 19:56:43,781: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-06-27 19:56:43,783: ERROR: main: yaml file is empty]
+Traceback (most recent call last):
+  File "C:\Users\HP\Videos\MLOPS\7-dsprojecte2e\dsproject-e2e\src\datascience\utils\common.py", line 31, in read_yaml
+    return ConfigBox(content)
+           ^^^^^^^^^^^^^^^^^^
+  File "box\\box.py", line 295, in box.box.Box.__init__
+box.exceptions.BoxValueError: First argument must be mapping or iterable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\HP\Videos\MLOPS\7-dsprojecte2e\dsproject-e2e\main.py", line 9, in <module>
+    data_ingestion.initiate_data_ingestion()
+  File "C:\Users\HP\Videos\MLOPS\7-dsprojecte2e\dsproject-e2e\src\datascience\pipeline\data_ingestion.py", line 13, in initiate_data_ingestion
+    config=ConfigurationManager()
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HP\Videos\MLOPS\7-dsprojecte2e\dsproject-e2e\src\datascience\config\configuration.py", line 12, in __init__
+    self.params=read_yaml(params_filepath)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HP\Videos\MLOPS\7-dsprojecte2e\dsproject-e2e\data-venv\Lib\site-packages\ensure\main.py", line 872, in __call__
+    return_val = self.f(*args, **kwargs)
+                 ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HP\Videos\MLOPS\7-dsprojecte2e\dsproject-e2e\src\datascience\utils\common.py", line 33, in read_yaml
+    raise ValueError("yaml file is empty")
+ValueError: yaml file is empty
+[2025-06-27 19:58:09,980: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2025-06-27 19:58:09,983: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-06-27 19:58:09,990: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-06-27 19:58:09,992: INFO: common: yaml file: schema.yaml loaded successfully]
+[2025-06-27 19:58:09,994: INFO: common: created directory at: artifacts]
+[2025-06-27 19:58:09,995: INFO: common: created directory at: artifacts/data_ingestion]
+[2025-06-27 19:58:12,742: INFO: data_ingestion: artifacts/data_ingestion/data.zip download! with following info: 
+Connection: close
+Content-Length: 23329
+Cache-Control: max-age=300
+Content-Security-Policy: default-src 'none'; style-src 'unsafe-inline'; sandbox
+Content-Type: application/zip
+ETag: "c69888a4ae59bc5a893392785a938ccd4937981c06ba8a9d6a21aa52b4ab5b6e"
+Strict-Transport-Security: max-age=31536000
+X-Content-Type-Options: nosniff
+X-Frame-Options: deny
+X-XSS-Protection: 1; mode=block
+X-GitHub-Request-Id: 10EE:2F9F3:6FD8A4:7CD206:685EE9C3
+Accept-Ranges: bytes
+Date: Fri, 27 Jun 2025 18:58:12 GMT
+Via: 1.1 varnish
+X-Served-By: cache-par-lfpg1960096-PAR
+X-Cache: MISS
+X-Cache-Hits: 0
+X-Timer: S1751050692.015244,VS0,VE157
+Vary: Authorization,Accept-Encoding
+Access-Control-Allow-Origin: *
+Cross-Origin-Resource-Policy: cross-origin
+X-Fastly-Request-ID: 188f0198adb8c9fb4f6fd2db82b184caa7383a76
+Expires: Fri, 27 Jun 2025 19:03:12 GMT
+Source-Age: 0
+
+]
+[2025-06-27 19:58:12,778: INFO: main: >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x]
+[2025-06-27 22:14:56,609: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2025-06-27 22:14:56,645: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-06-27 22:14:56,651: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-06-27 22:14:56,659: INFO: common: yaml file: schema.yaml loaded successfully]
+[2025-06-27 22:14:56,664: INFO: common: created directory at: artifacts]
+[2025-06-27 22:14:56,665: INFO: common: created directory at: artifacts/data_ingestion]
+[2025-06-27 22:14:56,666: INFO: data_ingestion: File already exists]
+[2025-06-27 22:14:56,682: INFO: main: >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x]
+[2025-06-27 22:14:56,684: INFO: main: >>>>>> stage Data Validation stage started <<<<<<]
+[2025-06-27 22:14:56,689: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-06-27 22:14:56,699: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-06-27 22:14:56,710: INFO: common: yaml file: schema.yaml loaded successfully]
+[2025-06-27 22:14:56,715: INFO: common: created directory at: artifacts]
+[2025-06-27 22:14:56,718: INFO: common: created directory at: artifacts/data_validation]
+[2025-06-27 22:14:56,808: INFO: main: >>>>>> stage Data Validation stage completed <<<<<<
+
+x==========x]

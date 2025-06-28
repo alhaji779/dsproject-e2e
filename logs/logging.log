@@ -82,3 +82,34 @@ x==========x]
 [2025-06-27 22:14:56,808: INFO: main: >>>>>> stage Data Validation stage completed <<<<<<
 
 x==========x]
+[2025-06-28 00:57:48,753: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2025-06-28 00:57:48,806: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-06-28 00:57:48,815: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-06-28 00:57:48,823: INFO: common: yaml file: schema.yaml loaded successfully]
+[2025-06-28 00:57:48,825: INFO: common: created directory at: artifacts]
+[2025-06-28 00:57:48,827: INFO: common: created directory at: artifacts/data_ingestion]
+[2025-06-28 00:57:48,830: INFO: data_ingestion: File already exists]
+[2025-06-28 00:57:48,849: INFO: main: >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x]
+[2025-06-28 00:57:48,852: INFO: main: >>>>>> stage Data Validation stage started <<<<<<]
+[2025-06-28 00:57:48,863: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-06-28 00:57:48,866: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-06-28 00:57:48,874: INFO: common: yaml file: schema.yaml loaded successfully]
+[2025-06-28 00:57:48,881: INFO: common: created directory at: artifacts]
+[2025-06-28 00:57:48,883: INFO: common: created directory at: artifacts/data_validation]
+[2025-06-28 00:57:49,011: INFO: main: >>>>>> stage Data Validation stage completed <<<<<<
+
+x==========x]
+[2025-06-28 00:57:49,013: INFO: main: >>>>>> stage Data Transformation stage started <<<<<<]
+[2025-06-28 00:57:49,046: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-06-28 00:57:49,049: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-06-28 00:57:49,054: INFO: common: yaml file: schema.yaml loaded successfully]
+[2025-06-28 00:57:49,055: INFO: common: created directory at: artifacts]
+[2025-06-28 00:57:49,057: INFO: common: created directory at: artifacts/data_transformation]
+[2025-06-28 00:57:49,132: INFO: data_transformation: Splited data into training and test sets]
+[2025-06-28 00:57:49,133: INFO: data_transformation: (1199, 12)]
+[2025-06-28 00:57:49,133: INFO: data_transformation: (400, 12)]
+[2025-06-28 00:57:49,135: INFO: main: >>>>>> stage Data Transformation stage completed <<<<<<
+
+x==========x]
